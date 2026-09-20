@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" role="img">
+<rect width="300" height="200" fill="#12151a"/>
+<title>Mobile view</title>
+<rect x="108" y="16" width="84" height="164" rx="14" fill="#0d1014" stroke="#2b3542" stroke-width="2"/>
+<rect x="134" y="22" width="32" height="5" rx="2.5" fill="#2b3542"/>
+<rect x="118" y="38" width="64" height="34" rx="6" fill="#ff6b35" opacity=".85"/>
+<rect x="126" y="48" width="34" height="4" rx="2" fill="#fff" opacity=".9"/>
+<rect x="126" y="57" width="22" height="4" rx="2" fill="#fff" opacity=".55"/>
+<g fill="#2b3542">
+<rect x="118" y="82" width="64" height="4" rx="2"/><rect x="118" y="92" width="48" height="4" rx="2"/>
+<rect x="118" y="106" width="30" height="22" rx="4"/><rect x="152" y="106" width="30" height="22" rx="4"/>
+<rect x="118" y="134" width="30" height="22" rx="4"/><rect x="152" y="134" width="30" height="22" rx="4"/></g>
+<rect x="118" y="106" width="30" height="22" rx="4" fill="#4cc2ff" opacity=".6"/>
+<rect x="128" y="168" width="44" height="4" rx="2" fill="#2b3542"/>
+<text x="16" y="192" font-family="ui-monospace,monospace" font-size="10" fill="#4a515b">same site, 390px</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" role="img">
+<rect width="200" height="150" fill="#12151a"/>
+<title>Brick breaker canvas demo</title>
+<rect x="18" y="26" width="24" height="10" rx="2" fill="#ff6b35" opacity="0.95"/><rect x="46" y="26" width="24" height="10" rx="2" fill="#ff6b35" opacity="0.95"/><rect x="74" y="26" width="24" height="10" rx="2" fill="#ff6b35" opacity="0.95"/><rect x="102" y="26" width="24" height="10" rx="2" fill="#ff6b35" opacity="0.95"/><rect x="130" y="26" width="24" height="10" rx="2" fill="#ff6b35" opacity="0.95"/><rect x="158" y="26" width="24" height="10" rx="2" fill="#ff6b35" opacity="0.95"/><rect x="18" y="40" width="24" height="10" rx="2" fill="#ffa03a" opacity="0.77"/><rect x="46" y="40" width="24" height="10" rx="2" fill="#ffa03a" opacity="0.77"/><rect x="74" y="40" width="24" height="10" rx="2" fill="#ffa03a" opacity="0.77"/><rect x="102" y="40" width="24" height="10" rx="2" fill="#ffa03a" opacity="0.77"/><rect x="130" y="40" width="24" height="10" rx="2" fill="#ffa03a" opacity="0.77"/><rect x="158" y="40" width="24" height="10" rx="2" fill="#ffa03a" opacity="0.77"/><rect x="18" y="54" width="24" height="10" rx="2" fill="#ffd166" opacity="0.59"/><rect x="46" y="54" width="24" height="10" rx="2" fill="#ffd166" opacity="0.59"/><rect x="74" y="54" width="24" height="10" rx="2" fill="#ffd166" opacity="0.59"/><rect x="102" y="54" width="24" height="10" rx="2" fill="#ffd166" opacity="0.59"/><rect x="130" y="54" width="24" height="10" rx="2" fill="#ffd166" opacity="0.59"/><rect x="158" y="54" width="24" height="10" rx="2" fill="#ffd166" opacity="0.59"/>
+<circle cx="126" cy="94" r="6" fill="#ff6b35"/>
+<path d="M126 88 L104 66" stroke="#ff6b35" stroke-width="1.5" opacity=".45" stroke-dasharray="3 3"/>
+<rect x="96" y="120" width="52" height="7" rx="3.5" fill="#e8eaed"/>
+<text x="16" y="141" font-family="ui-monospace,monospace" font-size="8" fill="#4a515b">canvas 2d</text>
+</svg>

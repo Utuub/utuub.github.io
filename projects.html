@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Project — Aidan Wasson</title>
+<meta name="description" content="Aidan Wasson's project demonstration page — six project blocks, including a playable JavaScript canvas demo.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/projects.css">
+
+<script src="js/theme.js"></script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="nav-mark" href="index.html">aidan<span>.</span>wasson</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Menu">&#9776;</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#work">Experience</a>
+      <a href="demo.html">JS Demo</a>
+      <button class="theme-btn" type="button" aria-label="Switch theme">&#9728;</button>
+    </nav>
+  </div>
+</header>
+
+<!-- The container the spec calls "your personal page": 720px on desktop,
+     390px on mobile. Geometry lives in css/projects.css. -->
+<main class="proj-page">
+
+  <h1 class="proj-title">My Project</h1>
+  <p class="proj-sub">
+    Six reserved blocks. The first one is playable &mdash; the rest open their details.
+  </p>
+
+  <!-- live filter, wired in js/projects.js -->
+  <div class="filter-bar">
+    <input class="filter-input" id="filterInput" type="search"
+           placeholder="Filter by keyword&#8230;" aria-label="Filter projects by keyword">
+    <button class="tag-btn active" type="button" data-tag="all">all</button>
+    <button class="tag-btn" type="button" data-tag="web">web</button>
+    <button class="tag-btn" type="button" data-tag="ai">ai</button>
+    <button class="tag-btn" type="button" data-tag="data">data</button>
+    <p class="filter-count" id="filterCount"></p>
+  </div>
+
+  <!-- the six blocks are created by js/projects.js from one data array -->
+  <div class="block-grid" id="blockGrid"></div>
+
+</main>
+
+<!-- detail modal -->
+<div class="modal-back" id="modalBack" role="dialog" aria-modal="true" aria-label="Project details">
+  <div class="modal" id="modalBody"></div>
+</div>
+
+<footer class="foot">
+  <a href="index.html">&larr; Back to home</a> &#183;
+  <a href="https://github.com/Utuub">github.com/Utuub</a><br>
+  CSCI 310 Project 1 &#183; HTML, CSS, plain JavaScript &#183; no frameworks
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/projects.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220" role="img">
+<rect width="300" height="220" fill="#12151a"/>
+<title>Desktop workspace</title>
+<rect x="24" y="30" width="252" height="132" rx="8" fill="#0d1014" stroke="#2b3542" stroke-width="2"/>
+<rect x="24" y="30" width="252" height="18" rx="8" fill="#1a1f26"/>
+<circle cx="38" cy="39" r="3.5" fill="#ff5f57"/><circle cx="50" cy="39" r="3.5" fill="#febc2e"/><circle cx="62" cy="39" r="3.5" fill="#28c840"/>
+<g fill="#2b3542">
+<rect x="40" y="62" width="120" height="6" rx="3"/><rect x="40" y="78" width="180" height="6" rx="3"/>
+<rect x="56" y="94" width="150" height="6" rx="3"/><rect x="56" y="110" width="96" height="6" rx="3"/>
+<rect x="40" y="126" width="140" height="6" rx="3"/></g>
+<rect x="40" y="62" width="52" height="6" rx="3" fill="#ff6b35"/>
+<rect x="56" y="94" width="64" height="6" rx="3" fill="#4cc2ff"/>
+<rect x="110" y="162" width="80" height="26" fill="#1a1f26"/>
+<rect x="76" y="188" width="148" height="9" rx="4.5" fill="#2b3542"/>
+<text x="24" y="212" font-family="ui-monospace,monospace" font-size="10" fill="#4a515b">building things that ship</text>
+</svg>

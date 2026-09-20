@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aidan Wasson — Computer Science, University of Indianapolis</title>
+<meta name="description" content="Aidan Wasson — computer science senior at the University of Indianapolis. Full-stack, machine learning and network engineering projects.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/home.css">
+
+<!-- loaded early, before first paint, so the saved theme does not flash -->
+<script src="js/theme.js"></script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="nav-mark" href="index.html">aidan<span>.</span>wasson</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Menu">&#9776;</button>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#work">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="projects.html">My Project</a>
+      <a href="demo.html">JS Demo</a>
+      <button class="theme-btn" type="button" aria-label="Switch theme">&#9728;</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ---------------- hero ---------------- -->
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Indianapolis, IN</p>
+      <h1>Aidan <span class="accent">Wasson</span></h1>
+
+      <!-- the typewriter target — js/main.js reads data-phrases -->
+      <p class="typed-line" data-typewriter
+         data-phrases='["Computer Science, B.S. &#183; May 2027","Full-stack developer","Machine learning practitioner","Network programming intern","Varsity football athlete"]'></p>
+
+      <p class="lede">
+        Senior at the University of Indianapolis, minoring in entrepreneurship. I build
+        things that actually ship &mdash; an SMS platform with live carrier registration,
+        volatility models that beat the industry baseline, and racks of network hardware
+        that had to work on Monday.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn" href="projects.html">See my project page</a>
+        <a class="btn btn-ghost" href="https://github.com/Utuub">GitHub</a>
+        <a class="btn btn-ghost" href="https://linkedin.com/in/aidan-wasson-02a446388">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <img src="img/hero.svg" alt="Terminal window listing Aidan's projects" width="320" height="240">
+    </div>
+  </section>
+
+  <!-- counters animate when they scroll into view -->
+  <section class="stats reveal">
+    <div class="stat"><b data-count="3.6">0</b><span>GPA</span></div>
+    <div class="stat"><b data-count="10" data-suffix="+">0</b><span>Server racks deployed</span></div>
+    <div class="stat"><b data-count="1" data-suffix="M+">0</b><span>Transactions screened</span></div>
+    <div class="stat"><b data-count="2" data-suffix="">0</b><span>Summer internships</span></div>
+  </section>
+
+  <!-- ---------------- about ----------------
+       This section is the one whose IMAGE and TEXT both change between the
+       desktop and the mobile layout, per the Project 1 spec. The swap is in
+       css/home.css; js/main.js watches the same breakpoint and reports which
+       layout is live in the [data-layout-text] span. -->
+  <section class="section reveal" id="about">
+    <h2>About</h2>
+    <div class="about">
+
+      <!-- desktop picture -->
+      <img class="about-desktop-only" src="img/about-desktop.svg"
+           alt="An editor window with code on a desk setup" width="300" height="220">
+
+      <!-- mobile picture — a different image entirely -->
+      <img class="about-mobile-only" src="img/about-mobile.svg"
+           alt="The same site rendered on a phone" width="300" height="200">
+
+      <div>
+        <!-- desktop copy -->
+        <div class="about-desktop-only">
+          <p>
+            I am a computer science senior at the University of Indianapolis, graduating in
+            May 2027, with a minor in entrepreneurship. Most of what I know I picked up by
+            building something end to end and then finding out what breaks.
+          </p>
+          <p>
+            That has meant registering a phone number with carriers so an SMS product could
+            legally send at scale, validating a forecasting model hard enough to trust the
+            number it prints, and standing up switch configurations that a whole office
+            depended on the next morning. I like the part where it has to work for someone
+            other than me.
+          </p>
+          <p>
+            Right now I am on a senior capstone team building AI glasses for an external
+            client, and looking for a new-grad software role starting summer 2027.
+          </p>
+        </div>
+
+        <!-- mobile copy — shorter, and not the same words -->
+        <div class="about-mobile-only">
+          <p>
+            CS senior at the University of Indianapolis, graduating May 2027. I build
+            full-stack products, machine learning models, and the network plumbing
+            underneath both.
+          </p>
+          <p>
+            Currently on a senior capstone team building AI glasses, and looking for a
+            new-grad software role for summer 2027.
+          </p>
+        </div>
+
+        <p style="font-family:var(--mono);font-size:12px;color:var(--ink-soft);margin-bottom:0">
+          Current layout: <span data-layout-text>&#8230;</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------- experience ---------------- -->
+  <section class="section reveal" id="work">
+    <h2>Experience</h2>
+    <div class="xp">
+      <article class="xp-item">
+        <h3>Network Programming Intern &mdash; Kyperion Technology</h3>
+        <p class="when">May 2026 &ndash; Aug 2026</p>
+        <p>
+          Configured and deployed over ten server racks, each supporting a dozen-plus devices.
+          Programmed network configurations across Araknis and Netgear switches and routers,
+          including VLAN segmentation and static IP protocol, and worked through several
+          network and device problems a week.
+        </p>
+      </article>
+      <article class="xp-item">
+        <h3>Information Technology Intern &mdash; Gaylor Electric</h3>
+        <p class="when">May 2025 &ndash; Aug 2025</p>
+        <p>
+          Technical support and issue resolution for the exempt workforce and leadership teams,
+          diagnosing device and software problems across Azure and Autodesk. Led a capstone
+          project team that took first place out of more than twenty teams.
+        </p>
+      </article>
+      <article class="xp-item">
+        <h3>University of Indianapolis</h3>
+        <p class="when">B.S. Computer Science, minor in Entrepreneurship &#183; May 2027 &#183; GPA 3.6</p>
+        <p>
+          Varsity football athlete. Vice President of Technology, Entrepreneurship Club.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ---------------- skills ---------------- -->
+  <section class="section reveal" id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span class="chip">Python</span><span class="chip">JavaScript</span><span class="chip">C</span>
+      <span class="chip">C++</span><span class="chip">PHP</span><span class="chip">Node.js</span>
+      <span class="chip">Express</span><span class="chip">SQLite</span><span class="chip">REST APIs</span>
+      <span class="chip">Azure</span><span class="chip">Railway</span><span class="chip">Netlify</span>
+      <span class="chip">GitHub Actions</span><span class="chip">XGBoost</span><span class="chip">LSTM</span>
+      <span class="chip">pandas</span><span class="chip">scikit-learn</span><span class="chip">Twilio</span>
+      <span class="chip">Anthropic API</span><span class="chip">VLAN config</span>
+    </div>
+  </section>
+
+  <!-- ---------------- cta ---------------- -->
+  <section class="cta reveal">
+    <h2>Six blocks, one of them playable</h2>
+    <p>
+      My project page holds everything I have built, and the first block is a game
+      written in plain JavaScript on a canvas.
+    </p>
+    <a class="btn" href="projects.html">Open My Project</a>
+  </section>
+
+</main>
+
+<footer class="foot">
+  Aidan Wasson &#183;
+  <a href="mailto:ajwasson2005@gmail.com">ajwasson2005@gmail.com</a> &#183;
+  <a href="https://github.com/Utuub">github.com/Utuub</a><br>
+  Built for CSCI 310 Project 1 with HTML, CSS and plain JavaScript. No frameworks.
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+/* home.css — the personal homepage (index.html), the site's entry point. */
+
+.wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---------- hero ---------- */
+.hero {
+  padding: 74px 0 60px;
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 46px;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 14px;
+}
+.hero h1 .accent { color: var(--accent); }
+
+/* the typewriter line — js/main.js fills it one character at a time */
+.typed-line {
+  font-family: var(--mono);
+  font-size: 16px;
+  color: var(--accent-2);
+  min-height: 26px;
+  margin: 0 0 18px;
+}
+.caret {
+  display: inline-block;
+  width: 9px;
+  background: var(--accent-2);
+  animation: blink 1s steps(1) infinite;
+  color: transparent;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+.hero p.lede {
+  color: var(--ink-soft);
+  font-size: 17px;
+  margin: 0 0 26px;
+  max-width: 48ch;
+}
+
+.hero-actions { display: flex; gap: 11px; flex-wrap: wrap; }
+
+.hero-art {
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+/* ---------- counters (js/main.js counts them up on reveal) ---------- */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  padding: 26px 0 10px;
+}
+
+.stat {
+  background: var(--bg-raise);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px 16px;
+}
+.stat b {
+  display: block;
+  font-family: var(--mono);
+  font-size: 30px;
+  color: var(--accent);
+  line-height: 1;
+  letter-spacing: -.03em;
+}
+.stat span {
+  display: block;
+  margin-top: 7px;
+  font-size: 12px;
+  color: var(--ink-soft);
+  letter-spacing: .02em;
+}
+
+/* ---------- generic section ---------- */
+.section { padding: 56px 0 10px; }
+.section > h2 { font-size: 28px; margin-bottom: 22px; }
+
+/* ---------- about: this is the block whose IMAGE AND TEXT both change
+   between the desktop and mobile layouts (Project 1 requirement) ---------- */
+.about {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 32px;
+  align-items: start;
+  background: var(--bg-raise);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 30px;
+}
+
+.about img { border-radius: 8px; border: 1px solid var(--line); }
+.about p { color: var(--ink-soft); margin-top: 0; }
+
+/* desktop copy shows, mobile copy hides — swapped in the media query below */
+.about-mobile-only { display: none; }
+
+/* ---------- experience list ---------- */
+.xp { display: grid; gap: 12px; }
+
+.xp-item {
+  background: var(--bg-raise);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 18px 22px;
+}
+.xp-item h3 { font-size: 17px; margin-bottom: 2px; }
+.xp-item .when {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin: 0 0 8px;
+}
+.xp-item p { margin: 0; color: var(--ink-soft); font-size: 14px; }
+
+/* ---------- skills ---------- */
+.skills { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  background: var(--bg-raise);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  color: var(--ink-soft);
+  font-family: var(--mono);
+  transition: color .15s ease, border-color .15s ease, transform .15s ease;
+}
+.chip:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-2px); }
+
+/* ---------- call to action ---------- */
+.cta {
+  margin-top: 46px;
+  text-align: center;
+  background: var(--bg-raise);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 40px 24px;
+}
+.cta h2 { font-size: 26px; }
+.cta p { color: var(--ink-soft); max-width: 46ch; margin: 0 auto 22px; }
+
+/* ---------- narrow layout ---------- */
+@media (max-width: 719px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 26px;
+    padding: 40px 0 34px;
+  }
+  .hero h1 { font-size: 34px; }
+  .hero p.lede { font-size: 15px; }
+
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stat b { font-size: 24px; }
+
+  .section { padding: 38px 0 6px; }
+  .section > h2 { font-size: 22px; }
+
+  /* the swap: single column, different photo, shorter copy */
+  .about { grid-template-columns: 1fr; gap: 18px; padding: 20px; }
+  .about-desktop-only { display: none; }
+  .about-mobile-only { display: block; }
+}
