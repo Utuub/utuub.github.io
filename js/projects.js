@@ -93,13 +93,17 @@
     },
     {
       slot: 6,
-      label: "Reserved",
-      sub: "next build",
-      img: "img/reserved.svg",
-      href: null,
-      tags: ["reserved"],
-      blurb: "Held open for the next project. The assignment asks for six reserved blocks, and this one has not been filled yet on purpose.",
-      points: ["Check back — this slot is next."]
+      label: "Storm Shift",
+      sub: "3D game · play it",
+      img: "img/storm-shift.svg",
+      href: "https://utuub.github.io/storm-shift/",
+      tags: ["javascript", "games", "3d"],
+      blurb: "A first-person 3D game built with Three.js and the Rapier physics engine. A tornado knocks 1,500 items off a grocery store's shelves and you restock them all.",
+      points: [
+        "Three.js scene with instanced meshes for 1,500 items",
+        "Rapier physics for the tornado pile, thrown items and a pushable cart",
+        "Upgrade tree, coworker AI, saves and a synthesized soundtrack"
+      ]
     }
   ];
 
