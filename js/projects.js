@@ -24,6 +24,8 @@
       img: "img/demo.svg",
       href: "demo.html",
       demo: true,
+      when: "Fall 2026",
+      links: [{ text: "Play it", url: "demo.html" }, { text: "Source code", url: "https://github.com/Utuub/utuub.github.io/blob/main/js/demo.js" }],
       tags: ["javascript", "games"],
       blurb: "A brick-breaker game written in plain JavaScript on an HTML canvas — no game engine and no library.",
       points: [
@@ -39,6 +41,8 @@
       sub: "full-stack SaaS",
       img: "img/aidan-integration.svg",
       href: null,
+      when: "May 2026 – Aug 2026",
+      links: [],
       tags: ["web", "ai", "backend"],
       blurb: "An AI-powered appointment reminder platform. Customers confirm or reschedule over plain-language SMS, which cuts no-shows for small businesses.",
       points: [
@@ -54,6 +58,8 @@
       sub: "ML · forecasting",
       img: "img/btc.svg",
       href: null,
+      when: "Spring 2026 · CSCI 424 Big Data Mining",
+      links: [{ text: "Code on GitHub", url: "https://github.com/Utuub/bitcoin-volatility-forecasting" }],
       tags: ["ml", "data", "python"],
       blurb: "Four volatility-forecasting models predicting Bitcoin realized volatility at 1-day, 1-week and 1-month horizons, over eight years of hourly market data.",
       points: [
@@ -69,6 +75,8 @@
       sub: "data · risk scoring",
       img: "img/fraud.svg",
       href: null,
+      when: "",
+      links: [],
       tags: ["data", "python"],
       blurb: "A transaction screener that processes over a million credit card transactions and ranks them for human review.",
       points: [
@@ -83,6 +91,8 @@
       sub: "CSCI 496 capstone",
       img: "img/glasses.svg",
       href: null,
+      when: "Aug 2026 – present",
+      links: [],
       tags: ["hardware", "ai", "in progress"],
       blurb: "Senior capstone project — a wearable assistant built for a real client. In progress through the 2026–27 academic year.",
       points: [
@@ -96,7 +106,9 @@
       label: "Storm Shift",
       sub: "3D game · play it",
       img: "img/storm-shift.svg",
-      href: "https://utuub.github.io/storm-shift/",
+      href: null,
+      when: "Oct 2026",
+      links: [{ text: "Play it", url: "https://utuub.github.io/storm-shift/" }, { text: "Code on GitHub", url: "https://github.com/Utuub/storm-shift" }],
       tags: ["javascript", "games", "3d"],
       blurb: "A first-person 3D game built with Three.js and the Rapier physics engine. A tornado knocks 1,500 items off a grocery store's shelves and you restock them all.",
       points: [
@@ -180,7 +192,7 @@
 
       var tags = document.createElement("p");
       tags.className = "modal-tags";
-      tags.textContent = p.tags.join(" · ");
+      tags.textContent = (p.when ? p.when + "  ·  " : "") + p.tags.join(" · ");
 
       var img = document.createElement("img");
       img.src = p.img;
@@ -202,6 +214,20 @@
       body.appendChild(img);
       body.appendChild(blurb);
       body.appendChild(ul);
+
+      if (p.links && p.links.length) {
+        var row = document.createElement("p");
+        row.className = "modal-links";
+        p.links.forEach(function (l) {
+          var a = document.createElement("a");
+          a.className = "btn btn-ghost";
+          a.href = l.url;
+          a.textContent = l.text;
+          if (/^https?:/.test(l.url)) { a.target = "_blank"; a.rel = "noopener"; }
+          row.appendChild(a);
+        });
+        body.appendChild(row);
+      }
 
       back.classList.add("open");
       close.focus();
