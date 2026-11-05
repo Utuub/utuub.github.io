@@ -57,7 +57,7 @@
       label: "Bitcoin Volatility Predictor",
       sub: "ML · forecasting",
       img: "img/btc.svg",
-      href: null,
+      href: "https://github.com/Utuub/bitcoin-volatility-forecasting",
       when: "Spring 2026 · CSCI 424 Big Data Mining",
       links: [{ text: "Code on GitHub", url: "https://github.com/Utuub/bitcoin-volatility-forecasting" }],
       tags: ["ml", "data", "python"],
@@ -74,7 +74,7 @@
       label: "Credit Card Fraud Detector",
       sub: "data · risk scoring",
       img: "img/fraud.svg",
-      href: null,
+      href: "https://github.com/Utuub/credit-card-fraud-detection",
       when: "Jan 2026 – Feb 2026",
       links: [{ text: "Code on GitHub", url: "https://github.com/Utuub/credit-card-fraud-detection" }],
       tags: ["data", "python"],
@@ -90,7 +90,7 @@
       label: "AI Glasses",
       sub: "voice AI · smart glasses",
       img: "img/glasses.svg",
-      href: null,
+      href: "https://github.com/Utuub/ai-glasses",
       when: "Aug 2026 – present",
       links: [{ text: "Code on GitHub", url: "https://github.com/Utuub/ai-glasses" }],
       tags: ["hardware", "ai", "in progress"],
@@ -134,7 +134,10 @@
       // the demo block is a real link; the rest open the detail modal
       var el = document.createElement(p.href ? "a" : "button");
       el.className = "block" + (p.demo ? " is-demo" : "");
-      if (p.href) el.href = p.href;
+      if (p.href) {
+        el.href = p.href;
+        if (/^https?:/.test(p.href)) { el.target = "_blank"; el.rel = "noopener"; }
+      }
       else el.type = "button";
 
       el.setAttribute("data-slot", p.slot);
