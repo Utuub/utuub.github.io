@@ -88,17 +88,17 @@
     {
       slot: 5,
       label: "AI Glasses",
-      sub: "CSCI 496 capstone",
+      sub: "voice AI · smart glasses",
       img: "img/glasses.svg",
       href: null,
       when: "Aug 2026 – present",
       links: [],
       tags: ["hardware", "ai", "in progress"],
-      blurb: "Senior capstone project — a wearable assistant built for a real client. In progress through the 2026–27 academic year.",
+      blurb: "A hands-free voice assistant for smart glasses, built for electricians in the field. Ask a code question out loud and hear the answer, without touching anything.",
       points: [
-        "Team capstone with a live external client",
-        "Hardware selection and technical design in progress",
-        "Gate reviews, tech demo and a final team report across the year"
+        "Spoken answers to National Electrical Code questions, citing the NEC section",
+        "Answers in under two seconds, read aloud with Android text-to-speech",
+        "Button-only controls for glasses with no touchscreen, plus quick Slack messages to the crew"
       ]
     },
     {
