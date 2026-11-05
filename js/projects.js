@@ -92,7 +92,7 @@
       img: "img/glasses.svg",
       href: null,
       when: "Aug 2026 – present",
-      links: [],
+      links: [{ text: "Code on GitHub", url: "https://github.com/Utuub/ai-glasses" }],
       tags: ["hardware", "ai", "in progress"],
       blurb: "A hands-free voice assistant for smart glasses, built for electricians in the field. Ask a code question out loud and hear the answer, without touching anything.",
       points: [
