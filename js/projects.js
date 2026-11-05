@@ -75,12 +75,12 @@
       sub: "data · risk scoring",
       img: "img/fraud.svg",
       href: null,
-      when: "",
-      links: [],
+      when: "Jan 2026 – Feb 2026",
+      links: [{ text: "Code on GitHub", url: "https://github.com/Utuub/credit-card-fraud-detection" }],
       tags: ["data", "python"],
       blurb: "A transaction screener that processes over a million credit card transactions and ranks them for human review.",
       points: [
-        "Handles 1M+ transactions in a single pass",
+        "Scores all 13.3M transactions in the dataset in about a minute",
         "Flags discrepancies and assigns a graded fraud-likelihood score",
         "Sorts the highest-risk transactions to the top of the review queue"
       ]
